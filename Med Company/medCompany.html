@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Uma pesquisa rápida de exame para doação de sangue.">
+        <meta name = "robots" content = "noindex, nofollow">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Med Company</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/medCompany.css"/>
+    </head>
+    <body>
+
+        <!-- 1° serção - Cabeçalho -->
+        <header>
+            <h1>MedCompany</h1>
+        </header>
+
+        <!-- Página principal -->
+        <main>
+            
+            <!-- 2° serção - Formulário de preenchimento -->
+            <h2>Formulário de exame</h2>
+            <p>Preencha o formulário abaixo com suas informações.</p>
+
+            <!-- 1° formulário -->
+            <form method = "post" action = "https://www.devmedia.com.br/codigos/formularios/aula6/">
+
+                <!-- 1° formulário -->
+                <div class = "form-texto">
+                    <label>Nome</label>
+                    <input type = "text" name = "nome" placeholder = "Digite o seu nome completo" required/><br />
+
+                    <label>Data de nascimento</label>
+                    <input type = "date" name = "data_nascimento" required/><br />
+
+                    <label>Email</label>
+                    <input type = "email" nome = "email" placeholder = "email@provedor.com" required/><br />
+                </div>
+
+                <!-- 2° formulário - 1° formulário do tipo radio-->
+                <div class = "form-radio-primeiro">
+                    <p>Você possui tatuagem?</p>
+
+                    <input type = "radio" name = "tatuagem" id = "tatuagem-sim" value = "sim" required/>
+                    <label for = "tatuagem-sim">Sim</label><br />
+
+                    <input type = "radio" name = "tatuagem" id = "tatuagem-nao" value = "nao"/>
+                    <label for = "tatuagem-nao">Não</label><br />
+                </div>
+
+                <!-- 2° formulário do tipo rádio -->
+                <div class = "form-radio-segundo">
+                    <p>Última vez que doou sangue?</p>
+
+                    <input type = "radio" name = "doacao" id = "doacao-meses" value = "6 meses" required/>
+                    <label for = "doacao-meses">Nos últimos 6 meses</label><br />
+
+                    <input type = "radio" name = "doacao" id = "doacao-ano" value = "1 ano"/>
+                    <label for = "doacao-ano">Há um 1 ano ou mais</label><br />
+
+                    <input type = "radio" name = "doacao" id = "doacao-nunca" value = "nunca"/>
+                    <lebel for = "doacao-nunca">Nunca doei sangue</lebel><br />
+
+                    <button type = "submit">Enviar formulário</button>
+                </div>
+            </form>
+        </main>
+
+        <!-- 3° serção - Rodapé -->
+        <footer>
+            <p>&copy; Copyright 2022 - MedCompany</p>
+            <p>Desenvolvido por <span>Beatriz Alves</span></p>
+        </footer>
+    </body>
+</html>
